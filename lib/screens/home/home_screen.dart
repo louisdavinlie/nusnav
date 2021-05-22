@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nusnav/screens/bus_list/bus_list.dart';
 import 'package:nusnav/screens/explore/explore.dart';
+import 'package:nusnav/screens/favorites/favorites.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -10,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  final _pages = [Explore(), BusList()];
+  final _pages = [Explore(), Favorites(), BusList()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -27,6 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on_outlined),
             label: 'Explore',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star_border_outlined),
+            label: 'Favorites',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bus_alert),

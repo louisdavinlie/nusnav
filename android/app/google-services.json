@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256442295791",
+    "project_id": "nusnav-9930d",
+    "storage_bucket": "nusnav-9930d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256442295791:android:b4620623e6ef9bc3a0821a",
+        "android_client_info": {
+          "package_name": "com.nusnav.nusnav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256442295791-3lnp0vgta70rrm6nannekinf8288s3j9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBivLMfX1ASqVymk096x1ZflAFT2gge5sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256442295791-3lnp0vgta70rrm6nannekinf8288s3j9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
