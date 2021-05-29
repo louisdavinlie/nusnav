@@ -50,6 +50,13 @@ class _FavoritesState extends State<Favorites> {
     return widget.storage.writeFavorites(_favorites);
   }
 
+  removeFavorite(String favoriteIndex) {
+    setState(() {
+      _favorites.remove(favoriteIndex);
+      _addFavorite();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return _favorites == null || _favorites.length == 0
@@ -72,10 +79,7 @@ class _FavoritesState extends State<Favorites> {
                         leading: IconButton(
                           icon: Icon(Icons.star),
                           onPressed: () {
-                            setState(() {
-                              _favorites.remove('$favoriteIndex');
-                              _addFavorite();
-                            });
+                            removeFavorite('$favoriteIndex');
                           },
                         ),
                         title: Text(

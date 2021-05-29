@@ -80,7 +80,6 @@ class _BusStopListState extends State<BusStopList> {
           itemCount: _busStops.length,
           itemBuilder: (context, index1) {
             _busStopName = _busStops[index1]["BusStopName"];
-            _services = _busStops[index1]["Services"];
             return ExpansionTile(
               leading: _favorites.contains('$index1')
                   ? IconButton(
@@ -110,8 +109,9 @@ class _BusStopListState extends State<BusStopList> {
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   scrollDirection: Axis.vertical,
-                  itemCount: _services.length,
+                  itemCount: _busStops[index1]["Services"].length,
                   itemBuilder: (context, index) {
+                    _services = _busStops[index1]["Services"];
                     String arrivalMinuteBus1 = _services[index]["NextBus"]
                             ["EstimatedArrival"]
                         .substring(14, 16);
