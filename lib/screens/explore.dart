@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:google_maps_place_picker/google_maps_place_picker.dart';
 
 class Explore extends StatefulWidget {
   @override
@@ -9,8 +10,13 @@ class Explore extends StatefulWidget {
 
 class _ExploreState extends State<Explore> {
   GoogleMapController mapController;
+  PickResult selectedStartPlace;
+  PickResult selectedDestinationPlace;
 
   final LatLng _center = const LatLng(1.2966, 103.7764);
+
+  final startAddressController = TextEditingController();
+  final destinationAddressController = TextEditingController();
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -61,6 +67,151 @@ class _ExploreState extends State<Explore> {
               initialCameraPosition: CameraPosition(
                 target: _center,
                 zoom: 15.0,
+              ),
+            ),
+            SafeArea(
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: Container(
+                  margin: EdgeInsets.only(top: 20),
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20),
+                    ),
+                  ),
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  child: Container(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          child: TextField(
+                            controller: startAddressController,
+                            onChanged: (value) {},
+                            decoration: new InputDecoration(
+                              suffixIcon: IconButton(
+                                  icon: Icon(Icons.map_outlined),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return PlacePicker(
+                                            apiKey:
+                                                'AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY',
+                                            initialPosition: LatLng(1.2966, 103.7764),
+                                            useCurrentLocation: false,
+                                            selectInitialPosition: true,
+                                            onPlacePicked: (result) {
+                                              selectedStartPlace = result;
+                                              Navigator.of(context).pop();
+                                              setState(() {
+                                                startAddressController.text =
+                                                    selectedStartPlace
+                                                            .formattedAddress ??
+                                                        "";
+                                              });
+                                            },
+                                          );
+                                        },
+                                      ),
+                                    );
+                                  }),
+                              labelText: 'Start',
+                              filled: true,
+                              fillColor: Colors.white,
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10.0),
+                                ),
+                                borderSide: BorderSide(
+                                  color: Colors.grey[400],
+                                  width: 2,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10.0),
+                                ),
+                                borderSide: BorderSide(
+                                  color: Colors.blue[300],
+                                  width: 2,
+                                ),
+                              ),
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Choose Starting Location',
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          child: TextField(
+                            controller: destinationAddressController,
+                            onChanged: (value) {},
+                            decoration: new InputDecoration(
+                              suffixIcon: IconButton(
+                                  icon: Icon(Icons.map_outlined),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return PlacePicker(
+                                            apiKey:
+                                                'AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY',
+                                            initialPosition: _center,
+                                            useCurrentLocation: true,
+                                            selectInitialPosition: true,
+                                            onPlacePicked: (result) {
+                                              selectedDestinationPlace = result;
+                                              Navigator.of(context).pop();
+                                              setState(() {
+                                                destinationAddressController
+                                                    .text = selectedDestinationPlace
+                                                        .formattedAddress ??
+                                                    "";
+                                              });
+                                            },
+                                          );
+                                        },
+                                      ),
+                                    );
+                                  }),
+                              labelText: 'Destination',
+                              filled: true,
+                              fillColor: Colors.white,
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10.0),
+                                ),
+                                borderSide: BorderSide(
+                                  color: Colors.grey[400],
+                                  width: 1,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10.0),
+                                ),
+                                borderSide: BorderSide(
+                                  color: Colors.blue[300],
+                                  width: 2,
+                                ),
+                              ),
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Choose Destination',
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             ),
           ],

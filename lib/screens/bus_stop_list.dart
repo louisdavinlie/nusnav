@@ -132,16 +132,18 @@ class _BusStopListState extends State<BusStopList> {
                         child: Row(
                           children: [
                             Container(
-                              width: 40,
-                              margin: EdgeInsets.all(20),
-                              child: Text(
-                                _services[index]["ServiceNo"],
+                              width: 60,
+                              margin: EdgeInsets.fromLTRB(20, 20, 40, 20),
+                              child: Center(
+                                child: Text(
+                                  _services[index]["ServiceNo"],
+                                ),
                               ),
                             ),
                             Row(
                               children: [
                                 Container(
-                                  margin: EdgeInsets.all(10),
+                                  margin: EdgeInsets.fromLTRB(20,10,20,10),
                                   child: Column(
                                     children: [
                                       Text(minuteUntilArrivalBus1.toString()),
@@ -150,7 +152,7 @@ class _BusStopListState extends State<BusStopList> {
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(10),
+                                  margin: EdgeInsets.fromLTRB(20,10,20,10),
                                   child: Column(
                                     children: [
                                       Text(minuteUntilArrivalBus2.toString()),
@@ -159,7 +161,7 @@ class _BusStopListState extends State<BusStopList> {
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(10),
+                                  margin: EdgeInsets.fromLTRB(20,10,20,10),
                                   child: Column(
                                     children: [
                                       Text(minuteUntilArrivalBus3.toString()),

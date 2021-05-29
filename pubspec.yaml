@@ -37,6 +37,7 @@ dependencies:
   intl:
   path_provider:
   flutter_spinkit:
+  flutter_dotenv: ^5.0.0
 
 dev_dependencies:
   flutter_test:
