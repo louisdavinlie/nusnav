@@ -74,7 +74,6 @@ class _FavoritesState extends State<Favorites> {
                     itemBuilder: (context, index1) {
                       int favoriteIndex = int.tryParse(_favorites[index1 + 1]);
                       _busStopName = _busStops[favoriteIndex]["BusStopName"];
-                      _services = _busStops[favoriteIndex]["Services"];
                       return ExpansionTile(
                         leading: IconButton(
                           icon: Icon(Icons.star),
@@ -92,8 +91,10 @@ class _FavoritesState extends State<Favorites> {
                             shrinkWrap: true,
                             physics: NeverScrollableScrollPhysics(),
                             scrollDirection: Axis.vertical,
-                            itemCount: _services.length,
+                            itemCount:
+                                _busStops[favoriteIndex]["Services"].length,
                             itemBuilder: (context, index2) {
+                              _services = _busStops[favoriteIndex]["Services"];
                               String arrivalMinuteBus1 = _services[index2]
                                       ["NextBus"]["EstimatedArrival"]
                                   .substring(14, 16);
@@ -114,16 +115,20 @@ class _FavoritesState extends State<Favorites> {
                                   child: Row(
                                     children: [
                                       Container(
-                                        width: 40,
-                                        margin: EdgeInsets.all(20),
-                                        child: Text(
-                                          _services[index2]["ServiceNo"],
+                                        width: 50,
+                                        margin:
+                                            EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                        child: Center(
+                                          child: Text(
+                                            _services[index2]["ServiceNo"],
+                                          ),
                                         ),
                                       ),
                                       Row(
                                         children: [
                                           Container(
-                                            margin: EdgeInsets.all(10),
+                                            margin: EdgeInsets.fromLTRB(
+                                                20, 10, 20, 10),
                                             child: Column(
                                               children: [
                                                 Text(minuteUntilArrivalBus1
@@ -133,7 +138,8 @@ class _FavoritesState extends State<Favorites> {
                                             ),
                                           ),
                                           Container(
-                                            margin: EdgeInsets.all(10),
+                                            margin: EdgeInsets.fromLTRB(
+                                                20, 10, 20, 10),
                                             child: Column(
                                               children: [
                                                 Text(minuteUntilArrivalBus2
@@ -143,7 +149,8 @@ class _FavoritesState extends State<Favorites> {
                                             ),
                                           ),
                                           Container(
-                                            margin: EdgeInsets.all(10),
+                                            margin: EdgeInsets.fromLTRB(
+                                                20, 10, 20, 10),
                                             child: Column(
                                               children: [
                                                 Text(minuteUntilArrivalBus3

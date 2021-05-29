@@ -9,9 +9,7 @@ import Flutter
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
 
-    NSString* mapsApiKey = [[NSProcessInfo processInfo] environment[@"MAPS_API_KEY"];
-
-    [GMSServices provideAPIKey:mapsApiKey]
+    GMSServices.provideAPIKey("AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY")
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }

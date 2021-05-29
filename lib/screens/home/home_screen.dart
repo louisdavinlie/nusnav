@@ -4,8 +4,6 @@ import 'package:nusnav/screens/explore.dart';
 import 'package:nusnav/screens/favorites.dart';
 import 'package:nusnav/services/favorite_storage.dart';
 
-FavoriteStorage storage = FavoriteStorage();
-
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -14,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  final _pages = [Explore(), Favorites(storage: storage,), BusStopList(storage: storage,)];
+  final _pages = [Explore(), Favorites(storage: FavoriteStorage(),), BusStopList(storage: FavoriteStorage(),)];
 
   void _onItemTapped(int index) {
     setState(() {

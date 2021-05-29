@@ -100,7 +100,7 @@ class _ExploreState extends State<Explore> {
                                       MaterialPageRoute(
                                         builder: (context) {
                                           return PlacePicker(
-                                            apiKey: APIKeys.apiKey,
+                                            apiKey: "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
@@ -128,7 +128,7 @@ class _ExploreState extends State<Explore> {
                                 ),
                                 borderSide: BorderSide(
                                   color: Colors.grey[400],
-                                  width: 2,
+                                  width: 1,
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
@@ -137,7 +137,7 @@ class _ExploreState extends State<Explore> {
                                 ),
                                 borderSide: BorderSide(
                                   color: Colors.blue[300],
-                                  width: 2,
+                                  width: 1,
                                 ),
                               ),
                               contentPadding: EdgeInsets.all(15),
@@ -163,7 +163,7 @@ class _ExploreState extends State<Explore> {
                                         builder: (context) {
                                           return PlacePicker(
                                             apiKey:
-                                                'AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY',
+                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
@@ -201,7 +201,7 @@ class _ExploreState extends State<Explore> {
                                 ),
                                 borderSide: BorderSide(
                                   color: Colors.blue[300],
-                                  width: 2,
+                                  width: 1,
                                 ),
                               ),
                               contentPadding: EdgeInsets.all(15),

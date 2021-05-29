@@ -110,19 +110,19 @@ class _BusStopListState extends State<BusStopList> {
                   physics: NeverScrollableScrollPhysics(),
                   scrollDirection: Axis.vertical,
                   itemCount: _busStops[index1]["Services"].length,
-                  itemBuilder: (context, index) {
+                  itemBuilder: (context, index2) {
                     _services = _busStops[index1]["Services"];
-                    String arrivalMinuteBus1 = _services[index]["NextBus"]
+                    String arrivalMinuteBus1 = _services[index2]["NextBus"]
                             ["EstimatedArrival"]
                         .substring(14, 16);
                     int minuteUntilArrivalBus1 =
                         int.parse(arrivalMinuteBus1) - now.minute;
-                    String arrivalMinuteBus2 = _services[index]["NextBus2"]
+                    String arrivalMinuteBus2 = _services[index2]["NextBus2"]
                             ["EstimatedArrival"]
                         .substring(14, 16);
                     int minuteUntilArrivalBus2 =
                         int.parse(arrivalMinuteBus2) - now.minute;
-                    String arrivalMinuteBus3 = _services[index]["NextBus3"]
+                    String arrivalMinuteBus3 = _services[index2]["NextBus3"]
                             ["EstimatedArrival"]
                         .substring(14, 16);
                     int minuteUntilArrivalBus3 =
@@ -132,11 +132,11 @@ class _BusStopListState extends State<BusStopList> {
                         child: Row(
                           children: [
                             Container(
-                              width: 60,
-                              margin: EdgeInsets.fromLTRB(20, 20, 40, 20),
+                              width: 50,
+                              margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                               child: Center(
                                 child: Text(
-                                  _services[index]["ServiceNo"],
+                                  _services[index2]["ServiceNo"],
                                 ),
                               ),
                             ),
