@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_maps_place_picker/google_maps_place_picker.dart';
+import 'package:nusnav/keys.dart';
 
 class Explore extends StatefulWidget {
   @override
@@ -99,9 +100,8 @@ class _ExploreState extends State<Explore> {
                                       MaterialPageRoute(
                                         builder: (context) {
                                           return PlacePicker(
-                                            apiKey:
-                                                'AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY',
-                                            initialPosition: LatLng(1.2966, 103.7764),
+                                            apiKey: APIKeys.apiKey,
+                                            initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
                                             onPlacePicked: (result) {
@@ -165,16 +165,17 @@ class _ExploreState extends State<Explore> {
                                             apiKey:
                                                 'AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY',
                                             initialPosition: _center,
-                                            useCurrentLocation: true,
+                                            useCurrentLocation: false,
                                             selectInitialPosition: true,
                                             onPlacePicked: (result) {
                                               selectedDestinationPlace = result;
                                               Navigator.of(context).pop();
                                               setState(() {
                                                 destinationAddressController
-                                                    .text = selectedDestinationPlace
-                                                        .formattedAddress ??
-                                                    "";
+                                                        .text =
+                                                    selectedDestinationPlace
+                                                            .formattedAddress ??
+                                                        "";
                                               });
                                             },
                                           );
