@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class Explore extends StatefulWidget {
@@ -15,6 +16,36 @@ class _ExploreState extends State<Explore> {
     mapController = controller;
   }
 
+  // Position _currentPosition;
+
+  // _getCurrentLocation() async {
+  //   await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
+  //       .then((Position position) async {
+  //     setState(() {
+  //       _currentPosition = position;
+
+  //       print('CURRENT POS: $_currentPosition');
+
+  //       mapController.animateCamera(
+  //         CameraUpdate.newCameraPosition(
+  //           CameraPosition(
+  //             target: LatLng(position.latitude, position.longitude),
+  //             zoom: 18.0,
+  //           ),
+  //         ),
+  //       );
+  //     });
+  //   }).catchError((e) {
+  //     print(e);
+  //   });
+  // }
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _getCurrentLocation();
+  // }
+
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -29,7 +60,7 @@ class _ExploreState extends State<Explore> {
               onMapCreated: _onMapCreated,
               initialCameraPosition: CameraPosition(
                 target: _center,
-                zoom: 17.0,
+                zoom: 15.0,
               ),
             ),
           ],

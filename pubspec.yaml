@@ -31,6 +31,12 @@ dependencies:
   firebase_auth:
   cloud_firestore:
   google_maps_flutter: ^0.5.28+1
+  geolocator:
+  google_maps_place_picker: ^0.10.0
+  http:
+  intl:
+  path_provider:
+  flutter_spinkit:
 
 dev_dependencies:
   flutter_test:
@@ -48,9 +54,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/json/BusArrival.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
