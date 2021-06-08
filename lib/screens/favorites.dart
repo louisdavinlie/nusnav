@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:nusnav/services/favorite_storage.dart';
+import 'package:nusnav/models/favorite_storage.dart';
 
 import 'components/appbar.dart';
 import 'loading.dart';
@@ -28,7 +28,7 @@ class _FavoritesState extends State<Favorites> {
 
   Future<void> loadJsonData() async {
     final String response =
-        await rootBundle.loadString('assets/json/BusArrival.json');
+        await rootBundle.loadString('assets/json/NUSBusArrival.json');
     final data = await json.decode(response);
     setState(() {
       _busStops = data["BusStops"];

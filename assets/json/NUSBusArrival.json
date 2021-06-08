@@ -1,0 +1,2183 @@
+{
+    "BusStops": [
+        {
+            "BusStopName": "AS 5",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "BIZ 2",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                },
+                {
+                    "ServiceNo": "A1E",
+                    "NextBus": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
+                        "Latitude": "1.3069268333333333",
+                        "Longitude": "103.73333"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
+                        "Latitude": "1.3086495",
+                        "Longitude": "103.76608433333334"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "28009",
+                        "DestinationCode": "28009",
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
+                        "Latitude": "1.3126545",
+                        "Longitude": "103.7666475"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Botanic Garden MRT",
+            "Services": [
+                {
+                    "ServiceNo": "BTC2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Oei Tiong Ham Building",
+            "Services": [
+                {
+                    "ServiceNo": "BTC2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Central Library",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A1E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "College Green",
+            "Services": [
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "COM 2",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1 To BIZ2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1 To UTown",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "EA",
+            "Services": [
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Information Technology",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A2E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Kent Ridge Bus Terminal",
+            "Services": [
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Kent Ridge MRT",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A1E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Kent Vale",
+            "Services": [
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "LT 13",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "LT 27",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A1E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Museum",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp Hon Sui Sen Memorial Library",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp Kent Ridge MRT",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A2E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp NUSS",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp TCOMS",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp University Hall",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp University Health Centre",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A1E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Opp Yusof Ishak House",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "PGP House 15",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "PGP7",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Prince George's Park",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A1E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Prince George Park Residences",
+            "Services": [
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Raffles Hall",
+            "Services": [
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "S 17",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A2E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "TCOMS",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "The Japanese Primary School",
+            "Services": [
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "University Hall",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "University Health Centre",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "University Town",
+            "Services": [
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C To FOS",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "C To KRT",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Ventus",
+            "Services": [
+                {
+                    "ServiceNo": "A2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B2",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "A2E",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        },
+        {
+            "BusStopName": "Yusof Ishak House",
+            "Services": [
+                {
+                    "ServiceNo": "A1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "D1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "B1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                },
+                {
+                    "ServiceNo": "BTC1",
+                    "NextBus": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:09:11+08:00"
+                    },
+                    "NextBus2": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:21:19+08:00"
+                    },
+                    "NextBus3": {
+                        "OriginCode": "10009",
+                        "DestinationCode": "45009",
+                        "EstimatedArrival": "2020-02-12T14:44:30+08:00"
+                    }
+                }
+            ]
+        }
+    ]
+}

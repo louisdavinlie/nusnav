@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nusnav/screens/bus_stop_list.dart';
 import 'package:nusnav/screens/explore.dart';
 import 'package:nusnav/screens/favorites.dart';
-import 'package:nusnav/services/favorite_storage.dart';
+import 'package:nusnav/models/favorite_storage.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

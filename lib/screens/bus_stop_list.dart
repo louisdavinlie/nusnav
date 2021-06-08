@@ -7,7 +7,7 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import 'package:nusnav/services/favorite_storage.dart';
+import 'package:nusnav/models/favorite_storage.dart';
 
 class BusStopList extends StatefulWidget {
   final FavoriteStorage storage;
@@ -46,7 +46,7 @@ class _BusStopListState extends State<BusStopList> {
 
   Future<void> loadJsonData() async {
     final String response =
-        await rootBundle.loadString('assets/json/BusArrival.json');
+        await rootBundle.loadString('assets/json/NUSBusArrival.json');
     final data = await json.decode(response);
     setState(() {
       _busStops = data["BusStops"];
