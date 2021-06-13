@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
 
-class FavoriteStorage {
+class NUSFavoriteStorage {
   Future<String> get _localPath async {
     final directory = await getApplicationDocumentsDirectory();
     return directory.path;
@@ -11,7 +11,7 @@ class FavoriteStorage {
 
   Future<File> get _localFile async {
     final path = await _localPath;
-    return File('$path/favorites.txt');
+    return File('$path/nusfavorites.txt');
   }
 
   Future<String> readFavorites() async {
@@ -26,11 +26,11 @@ class FavoriteStorage {
     }
   }
 
-  Future<File> writeFavorites(List<String> favoriteBusStopList) async {
+  Future<File> writeFavorites(List<String> favoriteNUSBusStopList) async {
     final file = await _localFile;
 
-    String busListString = favoriteBusStopList.join(" ");
-    print('$favoriteBusStopList');
+    String busListString = favoriteNUSBusStopList.join(" ");
+    print('$favoriteNUSBusStopList');
 
     return file.writeAsString(busListString);
   }

@@ -81,13 +81,13 @@ class _ExploreState extends State<Explore> {
                       Radius.circular(20),
                     ),
                   ),
-                  width: MediaQuery.of(context).size.width * 0.9,
+                  width: width * 0.9,
                   child: Container(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Container(
-                          width: MediaQuery.of(context).size.width * 0.9,
+                          width: width * 0.9,
                           child: TextField(
                             controller: startAddressController,
                             onChanged: (value) {},
@@ -100,7 +100,8 @@ class _ExploreState extends State<Explore> {
                                       MaterialPageRoute(
                                         builder: (context) {
                                           return PlacePicker(
-                                            apiKey: "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
+                                            apiKey:
+                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,

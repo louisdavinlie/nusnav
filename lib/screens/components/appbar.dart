@@ -8,11 +8,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.autoImplyLeading,
     this.text1,
     this.text2,
+    this.bottom,
   }) : super(key: key);
 
   final bool autoImplyLeading;
   final String text1;
   final String text2;
+  final PreferredSizeWidget bottom;
 
   @override
   Widget build(BuildContext context) {
@@ -48,10 +50,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
       ),
+      bottom: bottom,
     );
   }
 
   @override
-  Size get preferredSize =>
-      Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight + 40);
 }
