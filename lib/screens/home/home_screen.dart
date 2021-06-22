@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nusnav/models/public_favorite_storage.dart';
 import 'package:nusnav/screens/bus_stop_list.dart';
+import 'package:nusnav/screens/bus_stop_route.dart';
 import 'package:nusnav/screens/explore.dart';
 import 'package:nusnav/screens/favorites.dart';
 import 'package:nusnav/models/nus_favorite_storage.dart';
@@ -22,7 +23,8 @@ class _HomeScreenState extends State<HomeScreen> {
     BusStopList(
       nusStorage: NUSFavoriteStorage(),
       publicStorage: PublicFavoriteStorage(),
-    )
+    ),
+    BusStopRoute(),
   ];
 
   void _onItemTapped(int index) {
@@ -48,8 +50,17 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.bus_alert),
             label: 'Bus Stops',
-          )
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.map),
+            label: 'Routes',
+          ),
         ],
+        unselectedItemColor: Colors.black,
+        unselectedLabelStyle: TextStyle(
+          color: Colors.black,
+        ),
+        showUnselectedLabels: true,
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,

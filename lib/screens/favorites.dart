@@ -112,6 +112,7 @@ class _FavoritesState extends State<Favorites>
                     ),
                   ],
                 ),
+                extraAppBarHeight: 40,
               ),
               body: TabBarView(
                 children: [

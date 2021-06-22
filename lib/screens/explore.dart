@@ -3,6 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_maps_place_picker/google_maps_place_picker.dart';
 import 'package:nusnav/keys.dart';
+import 'package:nusnav/models/bus_stop_graph.dart';
 
 class Explore extends StatefulWidget {
   @override
@@ -101,7 +102,7 @@ class _ExploreState extends State<Explore> {
                                         builder: (context) {
                                           return PlacePicker(
                                             apiKey:
-                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
+                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY//",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
@@ -164,7 +165,7 @@ class _ExploreState extends State<Explore> {
                                         builder: (context) {
                                           return PlacePicker(
                                             apiKey:
-                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
+                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY//",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,

@@ -2,6 +2,8 @@
     "BusStops": [
         {
             "BusStopName": "AS 5",
+            "Latitude": 1.29349994659424,
+            "Longitude": 103.772102355957,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -26,23 +28,17 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00" 
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 },
                 {
@@ -50,23 +46,17 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00" 
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00" 
                     }
                 },
                 {
@@ -74,29 +64,25 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00" 
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 }
             ]
         },
         {
             "BusStopName": "BIZ 2",
+            "Latitude": 1.29333997411937,
+            "Longitude": 103.775159716606,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -121,23 +107,17 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 },
                 {
@@ -145,23 +125,17 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00" 
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 },
                 {
@@ -169,23 +143,17 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 },
                 {
@@ -193,29 +161,25 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00",
-                        "Latitude": "1.3069268333333333",
-                        "Longitude": "103.73333"
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00",
-                        "Latitude": "1.3086495",
-                        "Longitude": "103.76608433333334"
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00",
-                        "Latitude": "1.3126545",
-                        "Longitude": "103.7666475"
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 }
             ]
         },
         {
             "BusStopName": "Botanic Garden MRT",
+            "Latitude": 1.32270002365112,
+            "Longitude": 103.815101623535,
             "Services": [
                 {
                     "ServiceNo": "BTC2",
@@ -239,6 +203,8 @@
         },
         {
             "BusStopName": "Oei Tiong Ham Building",
+            "Latitude": 1.31974358180187,
+            "Longitude": 103.817929506302,
             "Services": [
                 {
                     "ServiceNo": "BTC2",
@@ -262,6 +228,8 @@
         },
         {
             "BusStopName": "Central Library",
+            "Latitude": 1.29639995098114,
+            "Longitude": 103.772201538086,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -357,6 +325,8 @@
         },
         {
             "BusStopName": "College Green",
+            "Latitude": 1.32333302497864,
+            "Longitude": 103.816307067871,
             "Services": [
                 {
                     "ServiceNo": "BTC1",
@@ -380,6 +350,8 @@
         },
         {
             "BusStopName": "COM 2",
+            "Latitude": 1.29428502886792,
+            "Longitude": 103.773757815361,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -457,6 +429,8 @@
         },
         {
             "BusStopName": "EA",
+            "Latitude": 1.30040001869202,
+            "Longitude": 103.77010345459,
             "Services": [
                 {
                     "ServiceNo": "B2",
@@ -516,6 +490,8 @@
         },
         {
             "BusStopName": "Information Technology",
+            "Latitude": 1.29737591743469,
+            "Longitude": 103.772850036621,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -611,6 +587,8 @@
         },
         {
             "BusStopName": "Kent Ridge Bus Terminal",
+            "Latitude": 1.29416704177856,
+            "Longitude": 103.769721984863,
             "Services": [
                 {
                     "ServiceNo": "B1",
@@ -670,6 +648,8 @@
         },
         {
             "BusStopName": "Kent Ridge MRT",
+            "Latitude": 1.29483294487,
+            "Longitude": 103.784393310547,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -729,6 +709,8 @@
         },
         {
             "BusStopName": "Kent Vale",
+            "Latitude": 1.30209994316101,
+            "Longitude": 103.769096374512,
             "Services": [
                 {
                     "ServiceNo": "BTC1",
@@ -770,6 +752,8 @@
         },
         {
             "BusStopName": "LT 13",
+            "Latitude": 1.29477859091277,
+            "Longitude": 103.770588576794,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -847,6 +831,8 @@
         },
         {
             "BusStopName": "LT 27",
+            "Latitude": 1.29739999771118,
+            "Longitude": 103.78099822998,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -924,6 +910,8 @@
         },
         {
             "BusStopName": "Museum",
+            "Latitude": 1.30110192298889,
+            "Longitude": 103.77367401123,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1037,6 +1025,8 @@
         },
         {
             "BusStopName": "Opp Hon Sui Sen Memorial Library",
+            "Latitude": 1.29277801513672,
+            "Longitude": 103.775001525879,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1096,6 +1086,8 @@
         },
         {
             "BusStopName": "Opp Kent Ridge MRT",
+            "Latitude": 1.29487597942352,
+            "Longitude": 103.784591674805,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1155,6 +1147,8 @@
         },
         {
             "BusStopName": "Opp NUSS",
+            "Latitude": 1.29330003261566,
+            "Longitude": 103.772399902344,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1214,6 +1208,8 @@
         },
         {
             "BusStopName": "Opp TCOMS",
+            "Latitude": 1.29379999637604,
+            "Longitude": 103.777000427246,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -1255,6 +1251,8 @@
         },
         {
             "BusStopName": "Opp University Hall",
+            "Latitude": 1.29750001430511,
+            "Longitude": 103.778198242188,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1314,6 +1312,8 @@
         },
         {
             "BusStopName": "Opp University Health Centre",
+            "Latitude": 1.29879999160767,
+            "Longitude": 103.775497436523,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -1373,6 +1373,8 @@
         },
         {
             "BusStopName": "Opp Yusof Ishak House",
+            "Latitude": 1.2989686469259,
+            "Longitude": 103.77422451973,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1450,6 +1452,8 @@
         },
         {
             "BusStopName": "PGP House 15",
+            "Latitude": 1.29305601119995,
+            "Longitude": 103.777778625488,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1473,6 +1477,8 @@
         },
         {
             "BusStopName": "PGP7",
+            "Latitude": 1.29320001602173,
+            "Longitude": 103.777801513672,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -1496,6 +1502,8 @@
         },
         {
             "BusStopName": "Prince George's Park",
+            "Latitude": 1.29180002212524,
+            "Longitude": 103.780502319336,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -1591,6 +1599,8 @@
         },
         {
             "BusStopName": "Prince George Park Residences",
+            "Latitude": 1.29099925112011,
+            "Longitude": 103.780964493752,
             "Services": [
                 {
                     "ServiceNo": "D2",
@@ -1614,6 +1624,8 @@
         },
         {
             "BusStopName": "Raffles Hall",
+            "Latitude": 1.30102869529789,
+            "Longitude": 103.772705554962,
             "Services": [
                 {
                     "ServiceNo": "B2",
@@ -1655,6 +1667,8 @@
         },
         {
             "BusStopName": "S 17",
+            "Latitude": 1.29747665891241,
+            "Longitude": 103.781354546547,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1732,6 +1746,8 @@
         },
         {
             "BusStopName": "TCOMS",
+            "Latitude": 1.29370222151434,
+            "Longitude": 103.776525914669,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1773,6 +1789,8 @@
         },
         {
             "BusStopName": "The Japanese Primary School",
+            "Latitude": 1.30073094367981,
+            "Longitude": 103.769973754883,
             "Services": [
                 {
                     "ServiceNo": "C",
@@ -1796,6 +1814,8 @@
         },
         {
             "BusStopName": "University Hall",
+            "Latitude": 1.2972229719162,
+            "Longitude": 103.778663635254,
             "Services": [
                 {
                     "ServiceNo": "A1",
@@ -1855,6 +1875,8 @@
         },
         {
             "BusStopName": "University Health Centre",
+            "Latitude": 1.2989000082016,
+            "Longitude": 103.77612015605,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -1914,6 +1936,8 @@
         },
         {
             "BusStopName": "University Town",
+            "Latitude": 1.30362176617453,
+            "Longitude": 103.774675250053,
             "Services": [
                 {
                     "ServiceNo": "D1",
@@ -2027,6 +2051,8 @@
         },
         {
             "BusStopName": "Ventus",
+            "Latitude": 1.29530000686646,
+            "Longitude": 103.770599365234,
             "Services": [
                 {
                     "ServiceNo": "A2",
@@ -2104,6 +2130,8 @@
         },
         {
             "BusStopName": "Yusof Ishak House",
+            "Latitude": 1.29869997501373,
+            "Longitude": 103.774299621582,
             "Services": [
                 {
                     "ServiceNo": "A1",

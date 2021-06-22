@@ -5,6 +5,7 @@ import 'package:nusnav/models/bus_service.dart';
 import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/public_favorite_storage.dart';
 import 'package:nusnav/screens/components/appbar.dart';
+import 'package:nusnav/models/bus_stop_graph.dart';
 
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
@@ -108,6 +109,7 @@ class _BusStopListState extends State<BusStopList>
               ),
             ],
           ),
+          extraAppBarHeight: 40,
         ),
         body: TabBarView(
           children: [
