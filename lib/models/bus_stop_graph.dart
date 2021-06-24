@@ -265,7 +265,7 @@ class BusStopGraph {
     "Opp Kent Ridge MRT": [
       {
         "bus": "A2",
-        "nextBusStop": "Prince George Park Residences",
+        "nextBusStop": "Prince George's Park",
       },
       {
         "bus": "D2",
@@ -526,20 +526,20 @@ class BusStopGraph {
     ],
   };
 
-  static Future<List<List<String>>> findPath(
+  static Future<List> findPath(
     String originBusStop,
     String destinationBusStop,
-    List<String> routes,
+    List routes,
     List previousBus,
     int maxNoOfBusToTake,
   ) async {
     try {
-      List<List<String>> result = [];
+      List result = [];
       List<Map<String, String>> child = graph[originBusStop];
 
       if (originBusStop != destinationBusStop) {
         for (int i = 0; i < child.length; i++) {
-          List<String> routesSoFar = List.from(routes);
+          List routesSoFar = List.from(routes);
           List previousBusCopy = List.from(previousBus);
 
           String nextBusStop = child[i]["nextBusStop"];
@@ -553,21 +553,23 @@ class BusStopGraph {
           previousBusCopy[2] += 1;
 
           if (nextBusStop != null) {
-            String routeToNextBusStop = "Board " +
-                bus +
-                " from " +
-                originBusStop.toUpperCase() +
-                "\nto " +
-                nextBusStop.toUpperCase();
+            // String routeToNextBusStop = "Board " +
+            //     bus +
+            //     " from " +
+            //     originBusStop.toUpperCase() +
+            //     " to " +
+            //     nextBusStop.toUpperCase();
+
+            List routeToNextBusStop = [bus, nextBusStop.toUpperCase()];
 
             routesSoFar.add(routeToNextBusStop);
 
             if (previousBusCopy[1] < (maxNoOfBusToTake + 1) &&
-                previousBusCopy[2] < 20) {
+                previousBusCopy[2] < 17) {
               print(previousBusCopy);
               if (nextBusStop == destinationBusStop) {
                 print(routesSoFar);
-                result.add(routesSoFar);
+                result.add([routesSoFar, previousBusCopy]);
               } else {
                 result.addAll(await findPath(
                   nextBusStop,

@@ -102,7 +102,7 @@ class _ExploreState extends State<Explore> {
                                         builder: (context) {
                                           return PlacePicker(
                                             apiKey:
-                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY//",
+                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
@@ -165,7 +165,7 @@ class _ExploreState extends State<Explore> {
                                         builder: (context) {
                                           return PlacePicker(
                                             apiKey:
-                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY//",
+                                                "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
                                             initialPosition: _center,
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,

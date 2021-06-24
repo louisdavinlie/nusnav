@@ -38,6 +38,7 @@ dependencies:
   path_provider:
   flutter_spinkit:
   flutter_dotenv: ^5.0.0
+  timelines: ^0.1.0
 
 dev_dependencies:
   flutter_test:
