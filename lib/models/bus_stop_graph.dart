@@ -553,12 +553,6 @@ class BusStopGraph {
           previousBusCopy[2] += 1;
 
           if (nextBusStop != null) {
-            // String routeToNextBusStop = "Board " +
-            //     bus +
-            //     " from " +
-            //     originBusStop.toUpperCase() +
-            //     " to " +
-            //     nextBusStop.toUpperCase();
 
             List routeToNextBusStop = [bus, nextBusStop.toUpperCase()];
 

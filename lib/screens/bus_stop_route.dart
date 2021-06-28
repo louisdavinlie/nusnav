@@ -80,6 +80,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
       width: width,
       margin: EdgeInsets.all(10),
       child: DropdownButtonFormField<String>(
+        isExpanded: true,
         decoration: InputDecoration(
           labelText: 'Sort By',
           filled: true,
@@ -129,6 +130,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
       width: width,
       margin: EdgeInsets.all(10),
       child: DropdownButtonFormField<int>(
+        isExpanded: true,
         decoration: InputDecoration(
           labelText: 'No of Buses',
           filled: true,
@@ -176,6 +178,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
     return Container(
       margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
       child: DropdownButtonFormField<String>(
+        isExpanded: true,
         decoration: InputDecoration(
           labelText: 'Starting Bus Stop',
           filled: true,
@@ -229,6 +232,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
     return Container(
       margin: EdgeInsets.fromLTRB(20, 0, 20, 10),
       child: DropdownButtonFormField<String>(
+        isExpanded: true,
         decoration: InputDecoration(
           labelText: 'Destination Bus Stop',
           filled: true,

@@ -24,35 +24,35 @@ class _ExploreState extends State<Explore> {
     mapController = controller;
   }
 
-  // Position _currentPosition;
+  Position _currentPosition;
 
-  // _getCurrentLocation() async {
-  //   await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
-  //       .then((Position position) async {
-  //     setState(() {
-  //       _currentPosition = position;
+  _getCurrentLocation() async {
+    await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
+        .then((Position position) async {
+      setState(() {
+        _currentPosition = position;
 
-  //       print('CURRENT POS: $_currentPosition');
+        print('CURRENT POS: $_currentPosition');
 
-  //       mapController.animateCamera(
-  //         CameraUpdate.newCameraPosition(
-  //           CameraPosition(
-  //             target: LatLng(position.latitude, position.longitude),
-  //             zoom: 18.0,
-  //           ),
-  //         ),
-  //       );
-  //     });
-  //   }).catchError((e) {
-  //     print(e);
-  //   });
-  // }
+        mapController.animateCamera(
+          CameraUpdate.newCameraPosition(
+            CameraPosition(
+              target: LatLng(position.latitude, position.longitude),
+              zoom: 18.0,
+            ),
+          ),
+        );
+      });
+    }).catchError((e) {
+      print(e);
+    });
+  }
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _getCurrentLocation();
-  // }
+  @override
+  void initState() {
+    super.initState();
+    _getCurrentLocation();
+  }
 
   @override
   Widget build(BuildContext context) {
