@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/bus_stop_graph.dart';
+import 'package:nusnav/services/bus_api.dart';
 
 import 'components/appbar.dart';
 import 'loading.dart';
@@ -18,7 +19,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
   String _originBusStop = "AS 5";
   String _destinationBusStop = "AS 5";
   int _maxNoOfBusToTake = 2;
-  String _sortBy = "Number of Buses";
+  String _sortBy = "Buses";
   List<BusStop> _nusBusStops = [];
 
   Future<void> loadNUSBusesJson() async {
@@ -112,8 +113,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
             _sortBy = value;
           });
         },
-        items:
-            <String>["Number of Buses", "Number of Stops"].map((String value) {
+        items: <String>["Buses", "Stops"].map((String value) {
           return DropdownMenuItem<String>(
             value: value,
             child: Text(
@@ -294,7 +294,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
       ),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          if (_sortBy == "Number of Buses") {
+          if (_sortBy == "Buses") {
             snapshot.data.sort((a, b) => a[1][1] == b[1][1]
                 ? a[1][2].compareTo(b[1][2])
                 : a[1][1].compareTo(b[1][1]));
@@ -387,7 +387,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
                                                                       ? Colors
                                                                           .lime
                                                                       : Colors
-                                                                          .teal; 
+                                                                          .teal;
                               return SolidLineConnector(
                                 indent: connectorType == ConnectorType.start
                                     ? 0

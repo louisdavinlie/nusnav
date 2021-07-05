@@ -33,7 +33,7 @@
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00" 
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",
@@ -46,7 +46,7 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00" 
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
@@ -56,7 +56,7 @@
                     "NextBus3": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:36:38+08:00" 
+                        "EstimatedArrival": "2020-02-12T14:36:38+08:00"
                     }
                 },
                 {
@@ -64,7 +64,7 @@
                     "NextBus": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:09:09+08:00" 
+                        "EstimatedArrival": "2020-02-12T14:09:09+08:00"
                     },
                     "NextBus2": {
                         "OriginCode": "28009",
@@ -130,7 +130,7 @@
                     "NextBus2": {
                         "OriginCode": "28009",
                         "DestinationCode": "28009",
-                        "EstimatedArrival": "2020-02-12T14:26:17+08:00" 
+                        "EstimatedArrival": "2020-02-12T14:26:17+08:00"
                     },
                     "NextBus3": {
                         "OriginCode": "28009",

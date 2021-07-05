@@ -15,18 +15,18 @@ class BusService {
     for (int i = 0; i < _busServices.length; i++) {
       String _serviceNo = _busServices[i]["ServiceNo"];
       Bus _nextBus1 = new Bus(
-        originCode: _busServices[i]["NextBus"]["OriginCode"],
-        destinationCode: _busServices[i]["NextBus"]["DestinationCode"],
+        // originCode: _busServices[i]["NextBus"]["OriginCode"],
+        // destinationCode: _busServices[i]["NextBus"]["DestinationCode"],
         estimatedArrival: _busServices[i]["NextBus"]["EstimatedArrival"],
       );
       Bus _nextBus2 = new Bus(
-        originCode: _busServices[i]["NextBus2"]["OriginCode"],
-        destinationCode: _busServices[i]["NextBus2"]["DestinationCode"],
+        // originCode: _busServices[i]["NextBus2"]["OriginCode"],
+        // destinationCode: _busServices[i]["NextBus2"]["DestinationCode"],
         estimatedArrival: _busServices[i]["NextBus2"]["EstimatedArrival"],
       );
       Bus _nextBus3 = new Bus(
-        originCode: _busServices[i]["NextBus3"]["OriginCode"],
-        destinationCode: _busServices[i]["NextBus3"]["DestinationCode"],
+        // originCode: _busServices[i]["NextBus3"]["OriginCode"],
+        // destinationCode: _busServices[i]["NextBus3"]["DestinationCode"],
         estimatedArrival: _busServices[i]["NextBus3"]["EstimatedArrival"],
       );
       List<Bus> _nextBuses = [];
@@ -35,6 +35,21 @@ class BusService {
       _nextBuses.add(_nextBus3);
       busServices
           .add(new BusService(serviceNo: _serviceNo, nextBuses: _nextBuses));
+    }
+    return busServices;
+  }
+
+  static List<BusService> fromJsonToBusServiceList(Map jsonInfo) {
+    List<BusService> busServices = [];
+    List _busServices = jsonInfo['ShuttleServiceResult']['shuttles'];
+    for (int i = 0; i < _busServices.length; i++) {
+      String _serviceNo = _busServices[i]['name'];
+      Bus _nextBus1 = Bus(estimatedArrival: _busServices[i]['arrivalTime']);
+      Bus _nextBus2 = Bus(estimatedArrival: _busServices[i]['nextArrivalTime']);
+      List<Bus> _nextBuses = [];
+      _nextBuses.add(_nextBus1);
+      _nextBuses.add(_nextBus2);
+      busServices.add(BusService(serviceNo: _serviceNo, nextBuses: _nextBuses));
     }
     return busServices;
   }
