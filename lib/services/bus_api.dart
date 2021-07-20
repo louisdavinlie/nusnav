@@ -23,7 +23,7 @@ class BusAPI {
     if (response.statusCode == 200) {
       final responseJson = jsonDecode(response.body);
       busStopList =
-          List.from(await BusStop.fromJsonToBusStopList(responseJson));
+          List.from(BusStop.fromJsonToBusStopList(responseJson));
     }
 
     return busStopList;

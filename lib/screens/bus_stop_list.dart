@@ -87,7 +87,7 @@ class _BusStopListState extends State<BusStopList>
 
   @override
   void setState(fn) {
-    if(mounted) {
+    if (mounted) {
       super.setState(fn);
     }
   }
@@ -140,6 +140,7 @@ class _BusStopListState extends State<BusStopList>
       future: BusAPI.getBusStops(),
       builder: (context, snapshot) {
         _nusBusStops = snapshot.data;
+        print(_nusBusStops);
         if (snapshot.hasData) {
           return ListView.builder(
             itemCount: _nusBusStops.length,

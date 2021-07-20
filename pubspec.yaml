@@ -32,13 +32,15 @@ dependencies:
   cloud_firestore:
   google_maps_flutter: ^0.5.28+1
   geolocator:
-  google_maps_place_picker: ^0.10.0
+  google_maps_place_picker:
   http:
   intl:
   path_provider:
   flutter_spinkit:
   flutter_dotenv: ^5.0.0
   timelines: ^0.1.0
+  flutter_polyline_points:
+  geocoding: ^1.0.5
 
 dev_dependencies:
   flutter_test:

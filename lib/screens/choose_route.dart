@@ -2,39 +2,60 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:google_maps_place_picker/google_maps_place_picker.dart';
 import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/bus_stop_graph.dart';
+import 'package:nusnav/screens/map_route.dart';
 import 'package:nusnav/services/bus_api.dart';
-import 'package:timelines/timelines.dart';
 
 import 'components/appbar.dart';
 import 'loading.dart';
+import 'package:timelines/timelines.dart';
 
-class BusStopRoute extends StatefulWidget {
+class ChooseRoute extends StatefulWidget {
+  final PickResult startLocation;
+  final PickResult destinationLocation;
+  final BusStop nearestBusStopToStart;
+  final BusStop nearestBusStopToDestination;
+
+  const ChooseRoute({
+    Key key,
+    @required this.nearestBusStopToStart,
+    @required this.nearestBusStopToDestination,
+    @required this.startLocation,
+    @required this.destinationLocation,
+  }) : super(key: key);
+
   @override
-  _BusStopRouteState createState() => _BusStopRouteState();
+  _ChooseRouteState createState() => _ChooseRouteState();
 }
 
-class _BusStopRouteState extends State<BusStopRoute> {
-  BusStop _originBusStop;
-  BusStop _destinationBusStop;
+class _ChooseRouteState extends State<ChooseRoute> {
+  String _originBusStop = "AS 5";
+  String _destinationBusStop = "AS 5";
   int _maxNoOfBusToTake = 2;
   String _sortBy = "Buses";
+  List<BusStop> _nusBusStops = [];
 
-  List<BusStop> _nusBusStops1 = [];
-  List<BusStop> _nusBusStops2 = [];
-
-  _loadNUSBusesJson() async {
-    List<BusStop> nusBusStops = await BusAPI.getBusStops();
+  Future<void> loadNUSBusesJson() async {
+    final String response =
+        await rootBundle.loadString('assets/json/NUSBusArrival.json');
+    final data = await json.decode(response);
     setState(() {
-      _nusBusStops1 = List.from(nusBusStops);
+      _nusBusStops = List.from(BusStop.toBusStopList(data["BusStops"]));
     });
+  }
+
+  Future<List<Location>> _pickResultToLatLng(PickResult location) async {
+    return await locationFromAddress(location.formattedAddress);
   }
 
   @override
   void initState() {
     super.initState();
-    _loadNUSBusesJson();
+    this.loadNUSBusesJson();
   }
 
   @override
@@ -43,7 +64,7 @@ class _BusStopRouteState extends State<BusStopRoute> {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: CustomAppBar(
-        autoImplyLeading: false,
+        autoImplyLeading: true,
         text1: 'NUS',
         text2: 'nav',
         extraAppBarHeight: 0,
@@ -55,8 +76,8 @@ class _BusStopRouteState extends State<BusStopRoute> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                originBusStopsDropdown(),
-                destinationBusStopsDropdown(),
+                // originBusStopsDropdown(),
+                // destinationBusStopsDropdown(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -69,8 +90,10 @@ class _BusStopRouteState extends State<BusStopRoute> {
           ),
           Container(
             child: buildBusRouteCalculator(
-              _originBusStop,
-              _destinationBusStop,
+              widget.startLocation,
+              widget.destinationLocation,
+              widget.nearestBusStopToStart,
+              widget.nearestBusStopToDestination,
               _maxNoOfBusToTake,
               width,
             ),
@@ -178,126 +201,124 @@ class _BusStopRouteState extends State<BusStopRoute> {
     );
   }
 
-  FutureBuilder originBusStopsDropdown() {
-    return FutureBuilder(
-      future: BusAPI.getBusStops(),
-      builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          return Container(
-            margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-            child: DropdownButtonFormField<BusStop>(
-              isExpanded: true,
-              decoration: InputDecoration(
-                labelText: 'Starting Bus Stop',
-                filled: true,
-                fillColor: Colors.white,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10.0),
-                  ),
-                  borderSide: BorderSide(
-                    color: Colors.grey[400],
-                    width: 1,
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10.0),
-                  ),
-                  borderSide: BorderSide(
-                    color: Colors.blue[300],
-                    width: 1,
-                  ),
-                ),
-                contentPadding: EdgeInsets.all(15),
-              ),
-              value: _originBusStop,
-              icon: Icon(Icons.arrow_downward),
-              onChanged: (BusStop value) {
-                setState(() {
-                  _originBusStop = value;
-                });
-              },
-              items: snapshot.data.map<DropdownMenuItem<BusStop>>(
-                (BusStop value) {
-                  return DropdownMenuItem<BusStop>(
-                    value: value,
-                    child: Text(value.toString()),
-                  );
-                },
-              ).toList(),
+  Container originBusStopsDropdown() {
+    return Container(
+      margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+      child: DropdownButtonFormField<String>(
+        isExpanded: true,
+        decoration: InputDecoration(
+          labelText: 'Starting Bus Stop',
+          filled: true,
+          fillColor: Colors.white,
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(10.0),
             ),
-          );
-        } else {
-          return Loading();
-        }
-      },
+            borderSide: BorderSide(
+              color: Colors.grey[400],
+              width: 1,
+            ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(10.0),
+            ),
+            borderSide: BorderSide(
+              color: Colors.blue[300],
+              width: 1,
+            ),
+          ),
+          contentPadding: EdgeInsets.all(15),
+        ),
+        value: _originBusStop,
+        icon: Icon(Icons.arrow_downward),
+        onChanged: (String value) {
+          setState(() {
+            _originBusStop = value;
+          });
+        },
+        items: _nusBusStops
+            .map(
+              (BusStop busStop) {
+                return busStop.busStopName;
+              },
+            )
+            .toList()
+            .map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            })
+            .toList(),
+      ),
     );
   }
 
-  FutureBuilder destinationBusStopsDropdown() {
-    return FutureBuilder(
-      future: BusAPI.getBusStops(),
-      builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          return Container(
-            margin: EdgeInsets.fromLTRB(20, 0, 20, 10),
-            child: DropdownButtonFormField<BusStop>(
-              isExpanded: true,
-              decoration: InputDecoration(
-                labelText: 'Destination Bus Stop',
-                filled: true,
-                fillColor: Colors.white,
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10.0),
-                  ),
-                  borderSide: BorderSide(
-                    color: Colors.grey[400],
-                    width: 1,
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10.0),
-                  ),
-                  borderSide: BorderSide(
-                    color: Colors.blue[300],
-                    width: 1,
-                  ),
-                ),
-                contentPadding: EdgeInsets.all(15),
-              ),
-              value: _destinationBusStop,
-              icon: Icon(Icons.arrow_downward),
-              onChanged: (BusStop value) {
-                setState(() {
-                  _destinationBusStop = value;
-                });
-              },
-              items: snapshot.data.map<DropdownMenuItem<BusStop>>(
-                (BusStop value) {
-                  return DropdownMenuItem<BusStop>(
-                    value: value,
-                    child: Text(value.toString()),
-                  );
-                },
-              ).toList(),
+  Container destinationBusStopsDropdown() {
+    return Container(
+      margin: EdgeInsets.fromLTRB(20, 0, 20, 10),
+      child: DropdownButtonFormField<String>(
+        isExpanded: true,
+        decoration: InputDecoration(
+          labelText: 'Destination Bus Stop',
+          filled: true,
+          fillColor: Colors.white,
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(10.0),
             ),
-          );
-        } else {
-          return Loading();
-        }
-      },
+            borderSide: BorderSide(
+              color: Colors.grey[400],
+              width: 1,
+            ),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(10.0),
+            ),
+            borderSide: BorderSide(
+              color: Colors.blue[300],
+              width: 1,
+            ),
+          ),
+          contentPadding: EdgeInsets.all(15),
+        ),
+        value: _destinationBusStop,
+        icon: Icon(Icons.arrow_downward),
+        onChanged: (String value) {
+          setState(() {
+            _destinationBusStop = value;
+          });
+        },
+        items: _nusBusStops
+            .map(
+              (BusStop busStop) {
+                return busStop.busStopName;
+              },
+            )
+            .toList()
+            .map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            })
+            .toList(),
+      ),
     );
   }
 
   FutureBuilder<List> buildBusRouteCalculator(
+    PickResult startLocation,
+    PickResult destinationLocation,
     BusStop originBusStop,
     BusStop destinationBusStop,
     int maxNoOfBusToTake,
     var width,
   ) {
+    String startAddr = startLocation.formattedAddress;
+    String destinationAddr = destinationLocation.formattedAddress;
     return FutureBuilder(
       future: BusStopGraph.findPath(
         originBusStop,
@@ -360,15 +381,49 @@ class _BusStopRouteState extends State<BusStopRoute> {
                   ),
                   children: [
                     Container(
+                      // decoration: BoxDecoration(
+                      //   border: Border.all(
+                      //     color: Colors.black,
+                      //     width: 1,
+                      //   ),
+                      // ),
                       child: Padding(
                         padding: const EdgeInsets.all(20.0),
                         child: Column(
                           children: [
+                            TimelineTile(
+                              contents: Container(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text('From - $startAddr'),
+                              ),
+                              node: TimelineNode(
+                                position: 0,
+                                indicator: DotIndicator(
+                                  color: Colors.brown,
+                                ),
+                                startConnector: SolidLineConnector(
+                                  color: Colors.brown,
+                                ),
+                                endConnector: SolidLineConnector(
+                                  color: Colors.brown,
+                                ),
+                              ),
+                            ),
                             FixedTimeline.tileBuilder(
                               theme: TimelineThemeData(
                                 nodePosition: 0,
                               ),
                               builder: TimelineTileBuilder.connected(
+                                firstConnectorBuilder: (context) {
+                                  return SolidLineConnector(
+                                    color: Colors.brown,
+                                  );
+                                },
+                                lastConnectorBuilder: (context) {
+                                  return SolidLineConnector(
+                                    color: Colors.brown,
+                                  );
+                                },
                                 connectionDirection: ConnectionDirection.before,
                                 connectorBuilder: (_, index2, connectorType) {
                                   var color;
@@ -439,8 +494,73 @@ class _BusStopRouteState extends State<BusStopRoute> {
                                 itemCount: snapshot.data[index][0].length,
                               ),
                             ),
+                            TimelineTile(
+                              contents: Container(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text('Walk to - $destinationAddr'),
+                              ),
+                              node: TimelineNode(
+                                position: 0,
+                                indicator: DotIndicator(
+                                  color: Colors.brown,
+                                ),
+                                startConnector: SolidLineConnector(
+                                  color: Colors.brown,
+                                ),
+                                endConnector: SolidLineConnector(
+                                  color: Colors.brown,
+                                ),
+                              ),
+                            ),
                           ],
                         ),
+                      ),
+                    ),
+                    Container(
+                      width: width * 0.3,
+                      child: TextButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.grey[600]),
+                        ),
+                        child: Text(
+                          'Select Route',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        onPressed: () async {
+                          List<BusStop> visitedBusStops = snapshot.data[index]
+                                  [0]
+                              .map((list) => list[1])
+                              .toList()
+                              .cast<BusStop>();
+                          // Navigator.pop(context, {
+                          //   'visitedBusStops': visitedBusStops,
+                          // });
+                          List<Location> _startLocation =
+                              await _pickResultToLatLng(startLocation);
+                          List<Location> _destinationLocation =
+                              await _pickResultToLatLng(destinationLocation);
+                          LatLng startLocationCoordinates = LatLng(
+                            _startLocation[0].latitude,
+                            _startLocation[0].longitude,
+                          );
+                          LatLng destinationLocationCoordinates = LatLng(
+                            _destinationLocation[0].latitude,
+                            _destinationLocation[0].longitude,
+                          );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MapRoute(
+                                startLocationCoordinates:
+                                    startLocationCoordinates,
+                                destinationLocationCoordinates:
+                                    destinationLocationCoordinates,
+                                visitedBusStops: visitedBusStops,
+                              ),
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ],

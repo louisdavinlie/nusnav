@@ -15,12 +15,16 @@ class BusStop {
     this.longName,
     this.shortName,
     this.busServices,
+    this.latitude,
+    this.longitude,
   });
 
   String busStopName;
   String longName;
   String shortName;
   List<BusService> busServices;
+  double latitude;
+  double longitude;
 
   static List<BusStop> toBusStopList(List _busStops) {
     List<BusStop> busStops = [];
@@ -41,6 +45,8 @@ class BusStop {
       String _busStopName = _busStops[i]['name'];
       String _longName = _busStops[i]['LongName'];
       String _shortName = _busStops[i]['ShortName'];
+      double _latitude = _busStops[i]['latitude'];
+      double _longitude = _busStops[i]['longitude'];
       // List<BusService> _busServices =
       //     await BusAPI.getAllBusesArrivalTime(_busStopName);
       busStops.add(BusStop(
@@ -48,8 +54,22 @@ class BusStop {
         longName: _longName,
         shortName: _shortName,
         // busServices: _busServices,
+        latitude: _latitude,
+        longitude: _longitude,
       ));
     }
     return busStops;
   }
+
+  @override
+  String toString() {
+    // TODO: implement toString
+    return longName;
+  }
+
+  bool operator ==(dynamic other) =>
+      other != null && other is BusStop && this.busStopName == other.busStopName;
+
+  @override
+  int get hashCode => super.hashCode;
 }
