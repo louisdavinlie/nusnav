@@ -9,12 +9,14 @@ class MapRoute extends StatefulWidget {
   final LatLng startLocationCoordinates;
   final LatLng destinationLocationCoordinates;
   final List<BusStop> visitedBusStops;
+  final Widget routeDisplay;
 
   const MapRoute({
     Key key,
     @required this.startLocationCoordinates,
     @required this.destinationLocationCoordinates,
     @required this.visitedBusStops,
+    @required this.routeDisplay,
   }) : super(key: key);
 
   @override
@@ -229,6 +231,15 @@ class _MapRouteState extends State<MapRoute> {
               ),
               polylines: Set<Polyline>.of(polylines.values),
             ),
+            Container(
+              color: Colors.grey[300],
+              child: ExpansionTile(
+                title: Text('Show Route'),
+                children: [
+                  widget.routeDisplay,
+                ],
+              ),
+            )
           ],
         ),
       ),

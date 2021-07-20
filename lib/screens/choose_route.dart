@@ -380,142 +380,7 @@ class _ChooseRouteState extends State<ChooseRoute> {
                     ],
                   ),
                   children: [
-                    Container(
-                      // decoration: BoxDecoration(
-                      //   border: Border.all(
-                      //     color: Colors.black,
-                      //     width: 1,
-                      //   ),
-                      // ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Column(
-                          children: [
-                            TimelineTile(
-                              contents: Container(
-                                padding: EdgeInsets.all(8.0),
-                                child: Text('From - $startAddr'),
-                              ),
-                              node: TimelineNode(
-                                position: 0,
-                                indicator: DotIndicator(
-                                  color: Colors.brown,
-                                ),
-                                startConnector: SolidLineConnector(
-                                  color: Colors.brown,
-                                ),
-                                endConnector: SolidLineConnector(
-                                  color: Colors.brown,
-                                ),
-                              ),
-                            ),
-                            FixedTimeline.tileBuilder(
-                              theme: TimelineThemeData(
-                                nodePosition: 0,
-                              ),
-                              builder: TimelineTileBuilder.connected(
-                                firstConnectorBuilder: (context) {
-                                  return SolidLineConnector(
-                                    color: Colors.brown,
-                                  );
-                                },
-                                lastConnectorBuilder: (context) {
-                                  return SolidLineConnector(
-                                    color: Colors.brown,
-                                  );
-                                },
-                                connectionDirection: ConnectionDirection.before,
-                                connectorBuilder: (_, index2, connectorType) {
-                                  var color;
-                                  String busNo =
-                                      snapshot.data[index][0][index2][0];
-                                  color = busNo == "A1"
-                                      ? Colors.red
-                                      : busNo == "A2"
-                                          ? Colors.yellow
-                                          : busNo == "D1"
-                                              ? Colors.pink
-                                              : busNo == "D2"
-                                                  ? Colors.indigo
-                                                  : busNo == "K"
-                                                      ? Colors.blue
-                                                      : busNo == "E"
-                                                          ? Colors.green
-                                                          : busNo == "BTC"
-                                                              ? Colors.orange
-                                                              : busNo == "L"
-                                                                  ? Colors.grey
-                                                                  : Colors
-                                                                      .brown;
-                                  return SolidLineConnector(
-                                    color: color,
-                                  );
-                                },
-                                indicatorBuilder: (context, index2) {
-                                  var color;
-                                  String busNo =
-                                      snapshot.data[index][0][index2][0];
-                                  color = busNo == "A1"
-                                      ? Colors.red
-                                      : busNo == "A2"
-                                          ? Colors.yellow
-                                          : busNo == "D1"
-                                              ? Colors.pink
-                                              : busNo == "D2"
-                                                  ? Colors.indigo
-                                                  : busNo == "K"
-                                                      ? Colors.blue
-                                                      : busNo == "E"
-                                                          ? Colors.green
-                                                          : busNo == "BTC"
-                                                              ? Colors.orange
-                                                              : busNo == "L"
-                                                                  ? Colors.grey
-                                                                  : Colors
-                                                                      .brown;
-                                  return DotIndicator(
-                                    color: color,
-                                    position: 0.5,
-                                  );
-                                },
-                                contentsAlign: ContentsAlign.basic,
-                                contentsBuilder: (context, index2) {
-                                  String busService =
-                                      snapshot.data[index][0][index2][0];
-                                  BusStop busStop =
-                                      snapshot.data[index][0][index2][1];
-                                  return Container(
-                                    margin: EdgeInsets.all(10),
-                                    child: Text(
-                                      busService + ' - ' + busStop.longName,
-                                    ),
-                                  );
-                                },
-                                itemCount: snapshot.data[index][0].length,
-                              ),
-                            ),
-                            TimelineTile(
-                              contents: Container(
-                                padding: EdgeInsets.all(8.0),
-                                child: Text('Walk to - $destinationAddr'),
-                              ),
-                              node: TimelineNode(
-                                position: 0,
-                                indicator: DotIndicator(
-                                  color: Colors.brown,
-                                ),
-                                startConnector: SolidLineConnector(
-                                  color: Colors.brown,
-                                ),
-                                endConnector: SolidLineConnector(
-                                  color: Colors.brown,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                    timelineRoute(startAddr, snapshot, index, destinationAddr),
                     Container(
                       width: width * 0.3,
                       child: TextButton(
@@ -557,6 +422,7 @@ class _ChooseRouteState extends State<ChooseRoute> {
                                 destinationLocationCoordinates:
                                     destinationLocationCoordinates,
                                 visitedBusStops: visitedBusStops,
+                                routeDisplay: timelineRoute(startAddr, snapshot, index, destinationAddr),
                               ),
                             ),
                           );
@@ -572,6 +438,134 @@ class _ChooseRouteState extends State<ChooseRoute> {
           return Loading();
         }
       },
+    );
+  }
+
+  Widget timelineRoute(String startAddr, AsyncSnapshot<List> snapshot,
+      int index, String destinationAddr) {
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            TimelineTile(
+              contents: Container(
+                padding: EdgeInsets.all(8.0),
+                child: Text('From - $startAddr'),
+              ),
+              node: TimelineNode(
+                position: 0,
+                indicator: DotIndicator(
+                  color: Colors.brown,
+                ),
+                startConnector: SolidLineConnector(
+                  color: Colors.brown,
+                ),
+                endConnector: SolidLineConnector(
+                  color: Colors.brown,
+                ),
+              ),
+            ),
+            FixedTimeline.tileBuilder(
+              theme: TimelineThemeData(
+                nodePosition: 0,
+              ),
+              builder: TimelineTileBuilder.connected(
+                firstConnectorBuilder: (context) {
+                  return SolidLineConnector(
+                    color: Colors.brown,
+                  );
+                },
+                lastConnectorBuilder: (context) {
+                  return SolidLineConnector(
+                    color: Colors.brown,
+                  );
+                },
+                connectionDirection: ConnectionDirection.before,
+                connectorBuilder: (_, index2, connectorType) {
+                  var color;
+                  String busNo = snapshot.data[index][0][index2][0];
+                  color = busNo == "A1"
+                      ? Colors.red
+                      : busNo == "A2"
+                          ? Colors.yellow
+                          : busNo == "D1"
+                              ? Colors.pink
+                              : busNo == "D2"
+                                  ? Colors.indigo
+                                  : busNo == "K"
+                                      ? Colors.blue
+                                      : busNo == "E"
+                                          ? Colors.green
+                                          : busNo == "BTC"
+                                              ? Colors.orange
+                                              : busNo == "L"
+                                                  ? Colors.grey
+                                                  : Colors.brown;
+                  return SolidLineConnector(
+                    color: color,
+                  );
+                },
+                indicatorBuilder: (context, index2) {
+                  var color;
+                  String busNo = snapshot.data[index][0][index2][0];
+                  color = busNo == "A1"
+                      ? Colors.red
+                      : busNo == "A2"
+                          ? Colors.yellow
+                          : busNo == "D1"
+                              ? Colors.pink
+                              : busNo == "D2"
+                                  ? Colors.indigo
+                                  : busNo == "K"
+                                      ? Colors.blue
+                                      : busNo == "E"
+                                          ? Colors.green
+                                          : busNo == "BTC"
+                                              ? Colors.orange
+                                              : busNo == "L"
+                                                  ? Colors.grey
+                                                  : Colors.brown;
+                  return DotIndicator(
+                    color: color,
+                    position: 0.5,
+                  );
+                },
+                contentsAlign: ContentsAlign.basic,
+                contentsBuilder: (context, index2) {
+                  String busService = snapshot.data[index][0][index2][0];
+                  BusStop busStop = snapshot.data[index][0][index2][1];
+                  return Container(
+                    margin: EdgeInsets.all(10),
+                    child: Text(
+                      busService + ' - ' + busStop.longName,
+                    ),
+                  );
+                },
+                itemCount: snapshot.data[index][0].length,
+              ),
+            ),
+            TimelineTile(
+              contents: Container(
+                padding: EdgeInsets.all(8.0),
+                child: Text('Walk to - $destinationAddr'),
+              ),
+              node: TimelineNode(
+                position: 0,
+                indicator: DotIndicator(
+                  color: Colors.brown,
+                ),
+                startConnector: SolidLineConnector(
+                  color: Colors.brown,
+                ),
+                endConnector: SolidLineConnector(
+                  color: Colors.brown,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
