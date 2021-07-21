@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_maps_place_picker/google_maps_place_picker.dart';
-import 'package:nusnav/keys.dart';
 import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/bus_stop_graph.dart';
 import 'package:nusnav/screens/choose_route.dart';
@@ -11,12 +10,12 @@ import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'dart:math' show cos, sqrt, asin;
 import 'package:geocoding/geocoding.dart';
 
-class Explore extends StatefulWidget {
+class ExplorePage extends StatefulWidget {
   @override
-  _ExploreState createState() => _ExploreState();
+  _ExplorePageState createState() => _ExplorePageState();
 }
 
-class _ExploreState extends State<Explore> {
+class _ExplorePageState extends State<ExplorePage> {
   GoogleMapController mapController;
   PickResult selectedStartPlace;
   PickResult selectedDestinationPlace;

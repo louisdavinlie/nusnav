@@ -1,40 +1,81 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/bus_stop_graph.dart';
 import 'package:nusnav/services/bus_api.dart';
 import 'package:timelines/timelines.dart';
-
 import 'components/appbar.dart';
 import 'loading.dart';
+import 'package:nusnav/components/auto_textfield.dart';
 
-class BusStopRoute extends StatefulWidget {
+class BusStopRoutePage extends StatefulWidget {
   @override
-  _BusStopRouteState createState() => _BusStopRouteState();
+  _BusStopRoutePageState createState() => _BusStopRoutePageState();
 }
 
-class _BusStopRouteState extends State<BusStopRoute> {
+class _BusStopRoutePageState extends State<BusStopRoutePage> {
   BusStop _originBusStop;
   BusStop _destinationBusStop;
+  TextEditingController _originBusStopTextEditingController;
+  TextEditingController _destinationBusStopTextEditingController;
+  TextEditingController _noOfBusesTextEditingController;
+  TextEditingController _sortByTextEditingController;
   int _maxNoOfBusToTake = 2;
   String _sortBy = "Buses";
-
-  List<BusStop> _nusBusStops1 = [];
-  List<BusStop> _nusBusStops2 = [];
+  List<BusStop> _nusBusStops;
+  Set<String> _busStopNames;
+  BusStop findBusStop(String busStopName) {
+    return _nusBusStops.firstWhere((BusStop element) {
+      return element.shortName == busStopName ||
+          element.longName == busStopName ||
+          element.busStopName == busStopName;
+    });
+  }
 
   _loadNUSBusesJson() async {
     List<BusStop> nusBusStops = await BusAPI.getBusStops();
     setState(() {
-      _nusBusStops1 = List.from(nusBusStops);
+      _nusBusStops = List.from(nusBusStops);
+      _busStopNames = _nusBusStops
+          .map((busStop) => {
+                busStop.busStopName,
+                busStop.longName,
+                busStop.shortName,
+              })
+          .toList()
+          .reduce(
+        (Set<String> value, Set<String> element) {
+          value.addAll(element);
+          return value;
+        },
+      );
     });
+  }
+
+  void _initControllers() {
+    _originBusStopTextEditingController = TextEditingController();
+    _destinationBusStopTextEditingController = TextEditingController();
+    _noOfBusesTextEditingController = TextEditingController();
+    _sortByTextEditingController = TextEditingController();
+  }
+
+  void _disposeControllers() {
+    _originBusStopTextEditingController.dispose();
+    _destinationBusStopTextEditingController.dispose();
+    _noOfBusesTextEditingController.dispose();
+    _sortByTextEditingController.dispose();
   }
 
   @override
   void initState() {
     super.initState();
     _loadNUSBusesJson();
+    _initControllers();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _disposeControllers();
   }
 
   @override
@@ -55,8 +96,8 @@ class _BusStopRouteState extends State<BusStopRoute> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                originBusStopsDropdown(),
-                destinationBusStopsDropdown(),
+                setOriginBusStopField(),
+                setDestinationBusStopField(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -174,6 +215,40 @@ class _BusStopRouteState extends State<BusStopRoute> {
             ),
           );
         }).toList(),
+      ),
+    );
+  }
+
+  Widget setOriginBusStopField() {
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+      child: AutoCompTextField(
+        hintText: 'Starting BusStop',
+        labelText: 'Starting BusStop',
+        options: _busStopNames,
+        onSuggestionSelected: (String suggestion) {
+          setState(() {
+            _originBusStop = findBusStop(suggestion);
+          });
+        },
+        textEditingController: _originBusStopTextEditingController,
+      ),
+    );
+  }
+
+  Widget setDestinationBusStopField() {
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+      child: AutoCompTextField(
+        hintText: 'Destination BusStop',
+        labelText: 'Destination BusStop',
+        options: _busStopNames,
+        onSuggestionSelected: (String suggestion) {
+          setState(() {
+            _destinationBusStop = findBusStop(suggestion);
+          });
+        },
+        textEditingController: _destinationBusStopTextEditingController,
       ),
     );
   }
