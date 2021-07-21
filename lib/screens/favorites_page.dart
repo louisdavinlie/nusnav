@@ -13,21 +13,21 @@ import 'package:nusnav/services/bus_api.dart';
 import 'components/appbar.dart';
 import 'loading.dart';
 
-class Favorites extends StatefulWidget {
+class FavoritesPage extends StatefulWidget {
   final NUSFavoriteStorage nusStorage;
   final PublicFavoriteStorage publicStorage;
 
-  const Favorites({
+  const FavoritesPage({
     Key key,
     this.nusStorage,
     this.publicStorage,
   }) : super(key: key);
 
   @override
-  _FavoritesState createState() => _FavoritesState();
+  _FavoritesPageState createState() => _FavoritesPageState();
 }
 
-class _FavoritesState extends State<Favorites>
+class _FavoritesPageState extends State<FavoritesPage>
     with SingleTickerProviderStateMixin {
   var now = DateTime.now();
 

@@ -17,21 +17,21 @@ import 'package:nusnav/services/bus_api.dart';
 
 import 'loading.dart';
 
-class BusStopList extends StatefulWidget {
+class BusStopListPage extends StatefulWidget {
   final NUSFavoriteStorage nusStorage;
   final PublicFavoriteStorage publicStorage;
 
-  const BusStopList({
+  const BusStopListPage({
     Key key,
     this.nusStorage,
     this.publicStorage,
   }) : super(key: key);
 
   @override
-  _BusStopListState createState() => _BusStopListState();
+  _BusStopListPageState createState() => _BusStopListPageState();
 }
 
-class _BusStopListState extends State<BusStopList>
+class _BusStopListPageState extends State<BusStopListPage>
     with SingleTickerProviderStateMixin {
   var now = DateTime.now();
 
