@@ -81,7 +81,7 @@ class _MapRouteState extends State<MapRoute> {
         infoWindow: InfoWindow(
           title: 'Start',
         ),
-        icon: BitmapDescriptor.defaultMarker,
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
       );
       Marker destinationMarker = Marker(
         markerId: MarkerId('($destinationLatitude, $destinationLongitude)'),
@@ -89,7 +89,7 @@ class _MapRouteState extends State<MapRoute> {
         infoWindow: InfoWindow(
           title: 'Destination',
         ),
-        icon: BitmapDescriptor.defaultMarker,
+        icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen),
       );
       markers.add(startMarker);
       markers.add(destinationMarker);
