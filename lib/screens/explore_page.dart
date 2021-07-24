@@ -148,6 +148,7 @@ class _ExplorePageState extends State<ExplorePage> {
         body: Stack(
           children: [
             GoogleMap(
+              zoomControlsEnabled: false,
               markers: Set<Marker>.from(markers),
               onMapCreated: _onMapCreated,
               initialCameraPosition: CameraPosition(

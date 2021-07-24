@@ -10,7 +10,7 @@ import 'package:nusnav/models/nus_favorite_storage.dart';
 import 'package:nusnav/models/public_favorite_storage.dart';
 import 'package:nusnav/services/bus_api.dart';
 
-import 'components/appbar.dart';
+import 'components/custom_appbar.dart';
 import 'loading.dart';
 
 class FavoritesPage extends StatefulWidget {
@@ -252,112 +252,6 @@ class _FavoritesPageState extends State<FavoritesPage>
       },
     );
   }
-
-  // Widget nusBuses() {
-  //   return _nusFavoriteStops.length == 1
-  //       ? Center(
-  //           child: Text('No Favorites'),
-  //         )
-  //       : ListView.builder(
-  //           itemCount: _nusFavoriteStops.length - 1,
-  //           itemBuilder: (context, index1) {
-  //             int favoriteIndex = int.tryParse(_nusFavoriteStops[index1 + 1]);
-  //             return ExpansionTile(
-  //               leading: IconButton(
-  //                 icon: Icon(Icons.star),
-  //                 onPressed: () {
-  //                   setState(() {
-  //                     _nusFavoriteStops.remove('$favoriteIndex');
-  //                     _addNUSFavorite();
-  //                   });
-  //                 },
-  //               ),
-  //               title: Text(
-  //                 _nusBusStops[favoriteIndex].busStopName,
-  //                 style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
-  //               ),
-  //               children: <Widget>[
-  //                 ListView.builder(
-  //                   shrinkWrap: true,
-  //                   physics: NeverScrollableScrollPhysics(),
-  //                   scrollDirection: Axis.vertical,
-  //                   itemCount: _nusBusStops[favoriteIndex].busServices.length,
-  //                   itemBuilder: (context, index2) {
-  //                     List<BusService> _services =
-  //                         List.from(_nusBusStops[favoriteIndex].busServices);
-  //                     String arrivalMinuteBus1 = _services[index2]
-  //                         .nextBuses[0]
-  //                         .estimatedArrival
-  //                         .substring(14, 16);
-  //                     int minuteUntilArrivalBus1 =
-  //                         int.parse(arrivalMinuteBus1) - now.minute;
-  //                     String arrivalMinuteBus2 = _services[index2]
-  //                         .nextBuses[1]
-  //                         .estimatedArrival
-  //                         .substring(14, 16);
-  //                     int minuteUntilArrivalBus2 =
-  //                         int.parse(arrivalMinuteBus2) - now.minute;
-  //                     String arrivalMinuteBus3 = _services[index2]
-  //                         .nextBuses[2]
-  //                         .estimatedArrival
-  //                         .substring(14, 16);
-  //                     int minuteUntilArrivalBus3 =
-  //                         int.parse(arrivalMinuteBus3) - now.minute;
-  //                     return ListTile(
-  //                       title: Center(
-  //                         child: Row(
-  //                           children: [
-  //                             Container(
-  //                               width: 50,
-  //                               margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
-  //                               child: Center(
-  //                                 child: Text(
-  //                                   _services[index2].serviceNo,
-  //                                 ),
-  //                               ),
-  //                             ),
-  //                             Row(
-  //                               children: [
-  //                                 Container(
-  //                                   margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-  //                                   child: Column(
-  //                                     children: [
-  //                                       Text(minuteUntilArrivalBus1.toString()),
-  //                                       Text('mins'),
-  //                                     ],
-  //                                   ),
-  //                                 ),
-  //                                 Container(
-  //                                   margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-  //                                   child: Column(
-  //                                     children: [
-  //                                       Text(minuteUntilArrivalBus2.toString()),
-  //                                       Text('mins'),
-  //                                     ],
-  //                                   ),
-  //                                 ),
-  //                                 Container(
-  //                                   margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-  //                                   child: Column(
-  //                                     children: [
-  //                                       Text(minuteUntilArrivalBus3.toString()),
-  //                                       Text('mins'),
-  //                                     ],
-  //                                   ),
-  //                                 )
-  //                               ],
-  //                             )
-  //                           ],
-  //                         ),
-  //                       ),
-  //                     );
-  //                   },
-  //                 ),
-  //               ],
-  //             );
-  //           },
-  //         );
-  // }
 
   Widget publicBuses() {
     return _publicFavoriteStops.length == 1

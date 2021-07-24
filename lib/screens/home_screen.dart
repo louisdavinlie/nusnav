@@ -17,10 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final _pages = [
     ExplorePage(),
-    FavoritesPage(
-      nusStorage: NUSFavoriteStorage(),
-      publicStorage: PublicFavoriteStorage(),
-    ),
     BusStopListPage(
       nusStorage: NUSFavoriteStorage(),
       publicStorage: PublicFavoriteStorage(),
@@ -43,10 +39,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on_outlined),
             label: 'Explore',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.star_border_outlined),
-            label: 'Favorites',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bus_alert),

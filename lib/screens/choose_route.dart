@@ -10,7 +10,7 @@ import 'package:nusnav/models/bus_stop_graph.dart';
 import 'package:nusnav/screens/map_route.dart';
 import 'package:nusnav/services/bus_api.dart';
 
-import 'components/appbar.dart';
+import 'components/custom_appbar.dart';
 import 'loading.dart';
 import 'package:timelines/timelines.dart';
 
@@ -422,7 +422,8 @@ class _ChooseRouteState extends State<ChooseRoute> {
                                 destinationLocationCoordinates:
                                     destinationLocationCoordinates,
                                 visitedBusStops: visitedBusStops,
-                                routeDisplay: timelineRoute(startAddr, snapshot, index, destinationAddr),
+                                routeDisplay: timelineRoute(startAddr, snapshot,
+                                    index, destinationAddr),
                               ),
                             ),
                           );
