@@ -14,12 +14,13 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:nusnav/models/nus_favorite_storage.dart';
 import 'package:nusnav/services/bus_api.dart';
+import 'package:nusnav/models/text_file_storage.dart';
 
 import 'loading.dart';
 
 class BusStopListPage extends StatefulWidget {
-  final NUSFavoriteStorage nusStorage;
-  final PublicFavoriteStorage publicStorage;
+  final TextFileStorage nusStorage;
+  final TextFileStorage publicStorage;
 
   const BusStopListPage({
     Key key,
@@ -108,8 +109,6 @@ class _BusStopListPageState extends State<BusStopListPage>
             ),
           ],
           autoImplyLeading: false,
-          text1: 'NUS',
-          text2: 'nav',
           bottom: TabBar(
             tabs: [
               Tab(

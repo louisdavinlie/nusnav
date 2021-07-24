@@ -85,8 +85,6 @@ class _BusStopRoutePageState extends State<BusStopRoutePage> {
     return Scaffold(
       appBar: CustomAppBar(
         autoImplyLeading: false,
-        text1: 'NUS',
-        text2: 'nav',
         extraAppBarHeight: 0,
       ),
       body: Column(

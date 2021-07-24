@@ -65,8 +65,6 @@ class _ChooseRouteState extends State<ChooseRoute> {
     return Scaffold(
       appBar: CustomAppBar(
         autoImplyLeading: true,
-        text1: 'NUS',
-        text2: 'nav',
         extraAppBarHeight: 0,
       ),
       body: Column(
