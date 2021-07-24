@@ -4,15 +4,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:nusnav/models/bus_service.dart';
 import 'package:nusnav/models/bus_stop.dart';
-import 'package:nusnav/models/public_favorite_storage.dart';
 import 'package:nusnav/screens/components/custom_appbar.dart';
-import 'package:nusnav/models/bus_stop_graph.dart';
 
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import 'package:nusnav/models/nus_favorite_storage.dart';
 import 'package:nusnav/services/bus_api.dart';
 import 'package:nusnav/models/text_file_storage.dart';
 
@@ -89,23 +86,26 @@ class _BusStopListPageState extends State<BusStopListPage>
       child: Scaffold(
         appBar: CustomAppBar(
           actions: [
-            DropdownButton<String>(
-              value: favouriteMode ? 'Favourites' : 'All',
-              items: [
-                DropdownMenuItem(
-                  child: Text('All'),
-                  value: 'All',
-                ),
-                DropdownMenuItem(
-                  child: Text('Favourites'),
-                  value: 'Favourites',
-                ),
-              ],
-              onChanged: (String newValue) {
-                setState(() {
-                  favouriteMode = !favouriteMode;
-                });
-              },
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 10, 15, 0),
+              child: DropdownButton<String>(
+                value: favouriteMode ? 'Favourites' : 'All',
+                items: [
+                  DropdownMenuItem(
+                    child: Text('All'),
+                    value: 'All',
+                  ),
+                  DropdownMenuItem(
+                    child: Text('Favourites'),
+                    value: 'Favourites',
+                  ),
+                ],
+                onChanged: (String newValue) {
+                  setState(() {
+                    favouriteMode = !favouriteMode;
+                  });
+                },
+              ),
             ),
           ],
           autoImplyLeading: false,
@@ -129,7 +129,7 @@ class _BusStopListPageState extends State<BusStopListPage>
               ),
             ],
           ),
-          extraAppBarHeight: 40,
+          extraAppBarHeight: 50,
         ),
         body: TabBarView(
           children: [
@@ -457,36 +457,21 @@ class _BusStopListPageState extends State<BusStopListPage>
                                       Container(
                                         margin:
                                             EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                        child: Column(
-                                          children: [
-                                            Text(minuteUntilArrivalBus1
-                                                .toString()),
-                                            Text('mins'),
-                                          ],
-                                        ),
+                                        child: Text(
+                                            minuteUntilArrivalBus1.toString()),
                                       ),
                                       Container(
                                         margin:
                                             EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                        child: Column(
-                                          children: [
-                                            Text(minuteUntilArrivalBus2
-                                                .toString()),
-                                            Text('mins'),
-                                          ],
-                                        ),
+                                        child: Text(
+                                            minuteUntilArrivalBus2.toString()),
                                       ),
                                       Container(
                                         margin:
                                             EdgeInsets.fromLTRB(20, 10, 20, 10),
-                                        child: Column(
-                                          children: [
-                                            Text(minuteUntilArrivalBus3
-                                                .toString()),
-                                            Text('mins'),
-                                          ],
-                                        ),
-                                      )
+                                        child: Text(
+                                            minuteUntilArrivalBus3.toString()),
+                                      ),
                                     ],
                                   )
                                 ],

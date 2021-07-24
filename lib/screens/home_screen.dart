@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nusnav/models/public_favorite_storage.dart';
 import 'package:nusnav/screens/bus_stop_list_page.dart';
 import 'package:nusnav/screens/explore_page.dart';
-import 'package:nusnav/models/nus_favorite_storage.dart';
 import 'package:nusnav/models/text_file_storage.dart';
 
 import 'bus_stop_route_page.dart';

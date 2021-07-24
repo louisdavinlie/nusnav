@@ -219,7 +219,7 @@ class _BusStopRoutePageState extends State<BusStopRoutePage> {
 
   Widget setOriginBusStopField() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+      margin: EdgeInsets.symmetric(horizontal: 15, vertical: 4),
       child: AutoCompTextField(
         hintText: 'Starting BusStop',
         labelText: 'Starting BusStop',
@@ -236,7 +236,7 @@ class _BusStopRoutePageState extends State<BusStopRoutePage> {
 
   Widget setDestinationBusStopField() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+      margin: EdgeInsets.symmetric(horizontal: 15, vertical: 4),
       child: AutoCompTextField(
         hintText: 'Destination BusStop',
         labelText: 'Destination BusStop',

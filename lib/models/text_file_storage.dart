@@ -28,11 +28,11 @@ class TextFileStorage {
     }
   }
 
-  Future<File> writeFavorites(List<String> ListToWrite) async {
+  Future<File> writeFavorites(List<String> listToWrite) async {
     final file = await _localFile;
 
-    String busListString = ListToWrite.join(" ");
-    print('$ListToWrite');
+    String busListString = listToWrite.join(" ");
+    print('$listToWrite');
 
     return file.writeAsString(busListString);
   }

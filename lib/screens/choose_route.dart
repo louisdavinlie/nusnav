@@ -8,7 +8,6 @@ import 'package:google_maps_place_picker/google_maps_place_picker.dart';
 import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/bus_stop_graph.dart';
 import 'package:nusnav/screens/map_route.dart';
-import 'package:nusnav/services/bus_api.dart';
 
 import 'components/custom_appbar.dart';
 import 'loading.dart';
