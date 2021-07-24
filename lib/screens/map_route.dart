@@ -3,7 +3,7 @@ import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:nusnav/models/bus_stop.dart';
 
-import 'components/appbar.dart';
+import 'components/custom_appbar.dart';
 
 class MapRoute extends StatefulWidget {
   final LatLng startLocationCoordinates;
@@ -216,8 +216,6 @@ class _MapRouteState extends State<MapRoute> {
       child: Scaffold(
         appBar: CustomAppBar(
           autoImplyLeading: true,
-          text1: 'NUS',
-          text2: 'nav',
           extraAppBarHeight: 0,
         ),
         body: Stack(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nusnav/screens/choose_route.dart';
 import 'package:nusnav/screens/home_screen.dart';
 
 void main() {

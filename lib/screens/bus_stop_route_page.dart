@@ -3,7 +3,7 @@ import 'package:nusnav/models/bus_stop.dart';
 import 'package:nusnav/models/bus_stop_graph.dart';
 import 'package:nusnav/services/bus_api.dart';
 import 'package:timelines/timelines.dart';
-import 'components/appbar.dart';
+import 'components/custom_appbar.dart';
 import 'loading.dart';
 import 'package:nusnav/components/auto_textfield.dart';
 
@@ -85,8 +85,6 @@ class _BusStopRoutePageState extends State<BusStopRoutePage> {
     return Scaffold(
       appBar: CustomAppBar(
         autoImplyLeading: false,
-        text1: 'NUS',
-        text2: 'nav',
         extraAppBarHeight: 0,
       ),
       body: Column(

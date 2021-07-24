@@ -6,21 +6,20 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
     Key key,
     this.autoImplyLeading,
-    this.text1,
-    this.text2,
     this.bottom,
     this.extraAppBarHeight,
+    this.actions,
   }) : super(key: key);
 
   final bool autoImplyLeading;
-  final String text1;
-  final String text2;
   final PreferredSizeWidget bottom;
   final int extraAppBarHeight;
+  final List<Widget> actions;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      actions: actions,
       backgroundColor: Colors.grey[200],
       automaticallyImplyLeading: autoImplyLeading,
       elevation: 0,
@@ -31,7 +30,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: RichText(
             text: TextSpan(children: [
               TextSpan(
-                text: text1,
+                text: 'NUS',
                 style: TextStyle(
                   color: Colors.orange[400],
                   fontWeight: FontWeight.bold,
@@ -40,7 +39,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
               TextSpan(
-                text: text2,
+                text: 'nav',
                 style: TextStyle(
                   color: Colors.grey[900],
                   fontWeight: FontWeight.bold,

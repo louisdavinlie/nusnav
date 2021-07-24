@@ -26,11 +26,11 @@ class PublicFavoriteStorage {
     }
   }
 
-  Future<File> writeFavorites(List<String> favoritePublicBusStopList) async {
+  Future<File> writeFavorites(List<String> favoriteBusStopList) async {
     final file = await _localFile;
 
-    String busListString = favoritePublicBusStopList.join(" ");
-    print('$favoritePublicBusStopList');
+    String busListString = favoriteBusStopList.join(" ");
+    print('$favoriteBusStopList');
 
     return file.writeAsString(busListString);
   }

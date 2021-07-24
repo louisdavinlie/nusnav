@@ -1,13 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:nusnav/models/bus_service.dart';
-
-import 'dart:async' show Future;
-import 'package:flutter/services.dart' show rootBundle;
-import 'dart:convert';
-
-import 'package:nusnav/services/bus_api.dart';
 
 class BusStop {
   BusStop({
@@ -68,7 +60,9 @@ class BusStop {
   }
 
   bool operator ==(dynamic other) =>
-      other != null && other is BusStop && this.busStopName == other.busStopName;
+      other != null &&
+      other is BusStop &&
+      this.busStopName == other.busStopName;
 
   @override
   int get hashCode => super.hashCode;
