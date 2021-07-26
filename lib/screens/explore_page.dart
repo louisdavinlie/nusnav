@@ -188,9 +188,10 @@ class _ExplorePageState extends State<ExplorePage> {
                                           return PlacePicker(
                                             apiKey:
                                                 "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
-                                            initialPosition: _center,
+                                            initialPosition: LatLng(_currentPosition.latitude, _currentPosition.longitude),
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
+                                            region: 'sg',
                                             onPlacePicked: (result) {
                                               selectedStartPlace = result;
                                               Navigator.of(context).pop();
@@ -251,7 +252,8 @@ class _ExplorePageState extends State<ExplorePage> {
                                           return PlacePicker(
                                             apiKey:
                                                 "AIzaSyCABm1zDzY-BvdqL7q1vcV7u-wdzbzQbtY",
-                                            initialPosition: _center,
+                                            initialPosition: LatLng(_currentPosition.latitude, _currentPosition.longitude),
+                                            region: 'sg',
                                             useCurrentLocation: false,
                                             selectInitialPosition: true,
                                             onPlacePicked: (result) {
