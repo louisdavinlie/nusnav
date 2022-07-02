@@ -1,16 +1,5 @@
-# nusnav
+# NUSnav
 
-A new Flutter project.
+The NUSnav app provides a simple and easy way to navigate around NUS by evaluating the best possible route to get from one place to another using information on both public and NUS buses.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://user-images.githubusercontent.com/75714889/177006754-9fef2828-3bec-4827-b5af-d7c5621d7ca2.mp4
